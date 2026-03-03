@@ -20,6 +20,18 @@
     <script src="https://unpkg.com/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
 
     <script>
+        const WORLD_SCALE = 1000;
+
+        function worldToMap(x, z) {
+            return [-(z / WORLD_SCALE), (x / WORLD_SCALE)];
+        }
+
+        function mapToWorld(lat, lng) {
+            return {
+                x: lng * WORLD_SCALE,
+                z: -lat * WORLD_SCALE
+            };
+        }        
         async function loadData() {
             const [markerRes, railwayRes] = await Promise.all([
                 fetch('data/marker_world.json'),
@@ -76,7 +88,8 @@
                             name: m.label || m.info || 'Unknown',
                             dial: dial,
                             info: m.info || '',
-                            latlng: [x, z],
+                            x: x,
+                            z: z,
                             color: color,
                             category: category
                         });
@@ -95,7 +108,7 @@
                             const x = Number(p[0]);
                             const z = Number(p[1]);
                             if (Number.isNaN(x) || Number.isNaN(z)) return null;
-                            return [(-z / 1000), (x / 1000)];
+                            return worldToMap(x, z);
                         }).filter(Boolean);
 
                         if (!points.length) return;
@@ -112,14 +125,15 @@
         }
 
         function initMap(pois, trenLines) {
-            var bounds = [[-20.48, -20.48], [20.48, 20.48]];
             var map = L.map('map', {
                 crs: L.CRS.Simple,
-                minZoom: 4,
-                maxZoom: 12
-            });
-            map.fitBounds(bounds);
+                minZoom: 5,
+                maxZoom: 12,
+                zoomSnap: 0.25
+            }).setView([0, 0], 0);
+            var bounds = [[-20.48, -20.48], [20.48, 20.48]];
             var currentOverlay = L.imageOverlay('map-journey.jpg', bounds).addTo(map);
+            map.fitBounds(bounds);
 
             var MapSelectorControl = L.Control.extend({
                 options: {
@@ -169,7 +183,7 @@
                 if (!groups[poi.category]) {
                     groups[poi.category] = L.layerGroup().addTo(map);
                 }
-                var marker = L.marker([(-poi.latlng[1] / 1000), (poi.latlng[0] / 1000)], {
+                var marker = L.marker(worldToMap(poi.x, poi.z), {
                     icon: L.icon({
                         iconUrl: "marker/" + poi.color + '-marker.png',
                         iconSize: [20, 30],
@@ -178,7 +192,7 @@
                     }),
                     name: poi.name
                 }).addTo(groups[poi.category]);
-                marker.bindPopup(`<h3>${poi.name}</h3><mid>/dial <b>${poi.dial}</b></mid><br><sml>${poi.latlng}</sml><br><mid>${poi.info}<mid>`).openPopup();
+                marker.bindPopup(`<h3>${poi.name}</h3><mid>/dial <b>${poi.dial}</b></mid><br><sml>${poi.x}, ${poi.z}</sml><br><mid>${poi.info}<mid>`).openPopup();
                 markers.push(marker);
             });
 
@@ -199,9 +213,10 @@
                 onAdd: function (mapInstance) {
                     var coordsDiv = L.DomUtil.create('div', 'coords-control');
                     mapInstance.on('mousemove', function (e) {
+                        const world = mapToWorld(e.latlng.lat, e.latlng.lng);
                         coordsDiv.innerHTML = 'Coordinates: ' +
-                            (e.latlng.lng.toFixed(3) * 1000) + ', ' +
-                            (-e.latlng.lat.toFixed(3) * 1000);
+                            Math.round(world.x) + ', ' +
+                            Math.round(world.z);
                     });
                     return coordsDiv;
                 }
