@@ -7734,6 +7734,15 @@
                     "icon": "mcminecart",
                     "info": "Lower Bay Metro Station"
                 }
+                "446": {
+                    "label": "Char",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Char<\/h1><div class=\"dial-bar\"><\/div><p  class=\"dial-dial\">\/dial Char<\/p><p  class=\"dial-info\"><\/p><p  class=\"dial-wiki\"><a href=\"\"><\/a><\/p><p  class=\"dial-coord\">X : 13357 Y : 64 Z : -19935<br> ID : 446 Added by : Who?<\/p><\/div>",
+                    "x": "-19769",
+                    "y": "64",
+                    "z": "19810",
+                    "icon": "building",
+                    "info": "Char"
+                },
             }
         },
         "4": {
@@ -12482,4 +12491,5 @@
     },
     "timestamp": 1771206821796
 }
+
 
