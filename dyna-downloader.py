@@ -46,7 +46,7 @@ def download_image(url: str, filename: Path) -> None:
     resp.raise_for_status()
     filename.write_bytes(resp.content)
     #maybe i can make a better loading bar but this works and technically gives more info which could be useful
-    print(f"Downloaded {filename}")
+    #print(f"Downloaded {filename}")
 
 
 def scrape_and_download_images(base_url: str, min_x: int, max_x: int, min_y: int, max_y: int, step: int, max_workers: int) -> None:
@@ -158,4 +158,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
