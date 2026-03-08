@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 100vh;
 }
+
 .leaflet-image-layer,
 .leaflet-tile {
     image-rendering: pixelated;
@@ -25,7 +26,8 @@ body {
     cursor: crosshair;
     background-color: #0f0f0f;
 }
-.leaflet-popup-tip, .leaflet-popup-content-wrapper {
+.leaflet-popup-tip,
+.leaflet-popup-content-wrapper {
     background-color: #3d3d3d;
     color: white;
 }
@@ -42,6 +44,25 @@ body {
 .map-selector-control label {
     margin-right: 4px;
 }
+
+/* Editor toggle: above map-selector-control in top-right */
+.leaflet-top.leaflet-right {
+    padding-top: 46px;
+}
+#editor-toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    padding: 8px 16px;
+    background-color: #3d3d3d;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
 .coords-control {
     top: 0;
     left: 0;

@@ -21,15 +21,19 @@
 
     <script>
         const WORLD_SCALE = 1000;
+        //not a good fix
+        //const MAP_SOUTH_OFFSET = 0.03;
 
         function worldToMap(x, z) {
+            //return [-(z / WORLD_SCALE) - MAP_SOUTH_OFFSET, (x / WORLD_SCALE)];
             return [-(z / WORLD_SCALE), (x / WORLD_SCALE)];
         }
 
         function mapToWorld(lat, lng) {
             return {
                 x: lng * WORLD_SCALE,
-                z: -lat * WORLD_SCALE
+                //z: -(lat + MAP_SOUTH_OFFSET) * WORLD_SCALE
+                z: -(lat) * WORLD_SCALE
             };
         }        
         async function loadData() {
@@ -248,5 +252,7 @@
     </script>
 
     <div id="coords"></div>
+
+    <script src="editor/editor.js"></script>
 </body>
 </html>
