@@ -5336,15 +5336,6 @@
                     "icon": "building",
                     "info": ""
                 },
-                "993": {
-                    "label": "cjungle",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">cjungle</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial old stargate</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -16381 Y : 64 Z : -471<br> ID : 993 Added by : Who?</p></div>",
-                    "x": "-16381",
-                    "y": "64",
-                    "z": "-471",
-                    "icon": "building",
-                    "info": ""
-                },
                 "994": {
                     "label": "mk",
                     "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">mk</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial dail mk</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -16449 Y : 64 Z : -2046<br> ID : 994 Added by : Who?</p></div>",
@@ -5666,7 +5657,7 @@
                     "x": "-8899",
                     "y": "64",
                     "z": "10905",
-                    "icon": "farm",
+                    "icon": "factory",
                     "info": ""
                 },
                 "1030": {
@@ -5711,8 +5702,8 @@
                     "x": "-8692",
                     "y": "64",
                     "z": "9378",
-                    "icon": "building",
-                    "info": "pvp!!!"
+                    "icon": "pvp",
+                    "info": ""
                 },
                 "1035": {
                     "label": "SkyBase",
@@ -8301,6 +8292,15 @@
                     "z": "-8583",
                     "icon": "wxt",
                     "info": "pozol-f"
+                },
+                "985": {
+                    "label": "cjungle",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">cjungle</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial N/A stargate</p><p  class=\"dial-info\"></p>Old Cyrus Mega Base of a Giant Blant Bulb<p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -16381 Y : 64 Z : -471<br> ID : 993 Added by : Who?</p></div>",
+                    "x": "-16381",
+                    "y": "64",
+                    "z": "-471",
+                    "icon": "wxt",
+                    "info": "cjungle"
                 }
             }
         },
