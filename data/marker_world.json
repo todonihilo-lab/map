@@ -5659,6 +5659,69 @@
                     "z": "8362",
                     "icon": "building",
                     "info": ""
+                },
+                "1029": {
+                    "label": "atomiron",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">atomiron</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /dial atomiron</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -8899 Y : 64 Z : 10905<br> ID : 1029 Added by : Who?</p></div>",
+                    "x": "-8899",
+                    "y": "64",
+                    "z": "10905",
+                    "icon": "farm",
+                    "info": ""
+                },
+                "1030": {
+                    "label": "abyss",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">abyss</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /dial abyss</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -7725 Y : 64 Z : 11214<br> ID : 1030 Added by : Who?</p></div>",
+                    "x": "-7725",
+                    "y": "64",
+                    "z": "11214",
+                    "icon": "building",
+                    "info": ""
+                },
+                "1031": {
+                    "label": "mushwood",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">mushwood</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /dial mushwood</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -6419 Y : 64 Z : 11152<br> ID : 1031 Added by : Who?</p></div>",
+                    "x": "-6419",
+                    "y": "64",
+                    "z": "11152",
+                    "icon": "building",
+                    "info": ""
+                },
+                "1032": {
+                    "label": "lief",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">lief</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /dial lief</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -8156 Y : 64 Z : 9590<br> ID : 1032 Added by : Who?</p></div>",
+                    "x": "-8156",
+                    "y": "64",
+                    "z": "9590",
+                    "icon": "building",
+                    "info": ""
+                },
+                "1033": {
+                    "label": "AquaticaReloaded",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">AquaticaReloaded</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial </p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -8520 Y : 64 Z : 9423<br> ID : 1033 Added by : Who?</p></div>",
+                    "x": "-8520",
+                    "y": "64",
+                    "z": "9423",
+                    "icon": "building",
+                    "info": ""
+                },
+                "1034": {
+                    "label": "shpoobase",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">shpoobase</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /dial shpoobase</p><p  class=\"dial-info\">pvp!!!</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -8692 Y : 64 Z : 9378<br> ID : 1034 Added by : Who?</p></div>",
+                    "x": "-8692",
+                    "y": "64",
+                    "z": "9378",
+                    "icon": "building",
+                    "info": "pvp!!!"
+                },
+                "1035": {
+                    "label": "SkyBase",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">SkyBase</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial </p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -9292 Y : 64 Z : 8674<br> ID : 1035 Added by : Who?</p></div>",
+                    "x": "-9292",
+                    "y": "64",
+                    "z": "8674",
+                    "icon": "building",
+                    "info": ""
                 }
             }
         },
