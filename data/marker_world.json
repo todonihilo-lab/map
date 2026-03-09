@@ -1511,15 +1511,6 @@
                     "icon": "building",
                     "info": "Stratopolis"
                 },
-                "214": {
-                    "label": "Sernship",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Sernship</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial sernship</p><p  class=\"dial-info\">N/A</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : 7111 Y : 64 Z : 6752<br> ID : 214 Added by : Who?</p></div>",
-                    "x": "7111",
-                    "y": "64",
-                    "z": "6752",
-                    "icon": "building",
-                    "info": "Sernship"
-                },
                 "215": {
                     "label": "Governor",
                     "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Governor</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial a_governor</p><p  class=\"dial-info\">N/A</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -5344 Y : 64 Z : -4633<br> ID : 215 Added by : Who?</p></div>",
@@ -5306,7 +5297,7 @@
                     "x": "-17417",
                     "y": "64",
                     "z": "251",
-                    "icon": "building",
+                    "icon": "cart",
                     "info": ""
                 },
                 "989": {
@@ -5397,6 +5388,51 @@
                     "y": "64",
                     "z": "11928",
                     "icon": "farm",
+                    "info": ""
+                },
+                "999": {
+                    "label": "unlikelyart",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">unlikelyart</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial dial unlikelyart</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -13636 Y : 64 Z : 16704<br> ID : 999 Added by : Who?</p></div>",
+                    "x": "-13636",
+                    "y": "64",
+                    "z": "16704",
+                    "icon": "building",
+                    "info": ""
+                },
+                "1000": {
+                    "label": "spire",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">spire</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial dial spire</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -18711 Y : 64 Z : -8789<br> ID : 1000 Added by : Who?</p></div>",
+                    "x": "-18711",
+                    "y": "64",
+                    "z": "-8789",
+                    "icon": "building",
+                    "info": ""
+                },
+                "1001": {
+                    "label": "rof",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">rof</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial dial rof</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -13949 Y : 64 Z : 15769<br> ID : 1001 Added by : Who?</p></div>",
+                    "x": "-13949",
+                    "y": "64",
+                    "z": "15769",
+                    "icon": "building",
+                    "info": ""
+                },
+                "1002": {
+                    "label": "watershop",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">watershop</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial dial watershop</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -14823 Y : 64 Z : 16282<br> ID : 1002 Added by : Who?</p></div>",
+                    "x": "-14823",
+                    "y": "64",
+                    "z": "16282",
+                    "icon": "cart",
+                    "info": ""
+                },
+                "1003": {
+                    "label": "blitz",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">blitz</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial dial blitz</p><p  class=\"dial-info\"></p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -14877 Y : 64 Z : 19960<br> ID : 1003 Added by : Who?</p></div>",
+                    "x": "-14877",
+                    "y": "64",
+                    "z": "19960",
+                    "icon": "building",
                     "info": ""
                 }
             }
@@ -6020,15 +6056,6 @@
                     "z": "-14972",
                     "icon": "factory",
                     "info": "Dakto Mob Farm"
-                },
-                "623": {
-                    "label": "Valley of Carrots",
-                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">Valley of Carrots</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial valleyofcarrots carrot</p><p  class=\"dial-info\">Owned by TomDaltz\r\n</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -14948 Y : 64 Z : -11897<br> ID : 623 Added by : Who?</p></div>",
-                    "x": "-14948",
-                    "y": "64",
-                    "z": "-11897",
-                    "icon": "factory",
-                    "info": "Valley of Carrots"
                 },
                 "632": {
                     "label": "Get More Wood",
