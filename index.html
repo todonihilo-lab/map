@@ -86,6 +86,12 @@
                             infoLower.includes('farm')
                         ) {
                             color = 'yellow';
+                        } else if (
+                            catLower.includes('pvp') ||
+                            labelLower.includes('pvp') ||
+                            infoLower.includes('pvp')
+                        ) {
+                            color = 'blue';
                         }
 
                         pois.push({
@@ -181,11 +187,17 @@
             L.rectangle([[20, 20], [-20, -20]], { color: '#911', fill: false }).addTo(map).bindPopup("World Border");
 
             var groups = {};
+            var railwayGroup = L.layerGroup().addTo(map);
             var markers = [];
 
             pois.forEach(poi => {
                 if (!groups[poi.category]) {
-                    groups[poi.category] = L.layerGroup().addTo(map);
+                    // Default-hide certain dial layers, others start visible
+                    if (poi.category === 'Dial (WXT)' || poi.category === 'Dial (Station)') {
+                        groups[poi.category] = L.layerGroup();
+                    } else {
+                        groups[poi.category] = L.layerGroup().addTo(map);
+                    }
                 }
                 var marker = L.marker(worldToMap(poi.x, poi.z), {
                     icon: L.icon({
@@ -203,11 +215,12 @@
             trenLines.forEach(line => {
                 if (!Array.isArray(line.points)) return;
                 L.polyline(line.points, { color: line.color || '#ffffff' })
-                    .addTo(map)
+                    .addTo(railwayGroup)
                     .bindPopup(line.name || '');
             });
 
-            L.control.layers(null, groups).addTo(map);
+            var overlays = Object.assign({ Railways: railwayGroup }, groups);
+            L.control.layers(null, overlays).addTo(map);
 
             var coordsControl = L.Control.extend({
                 options: {
