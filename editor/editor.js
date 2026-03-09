@@ -163,7 +163,7 @@
             '<label>X <input type="text" name="x" placeholder="0" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Y <input type="text" name="y" placeholder="64" value="64" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Z <input type="text" name="z" placeholder="0" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
-            '<label>Dial command <input type="text" name="dial" value="/dial " placeholder="" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
+            '<label>Dial command <input type="text" name="dial" value="" placeholder="" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Wiki URL <input type="text" name="wiki" placeholder="https://..." style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;"></label>' +
             '<label>Type <select name="type" style="width:100%;box-sizing:border-box;padding:6px;margin:4px 0;background:#1a1a1a;border:1px solid #555;color:#eee;border-radius:4px;">' +
             TYPE_OPTIONS.map(function (o) { return '<option value="' + o + '">' + o + '</option>'; }).join('') +
