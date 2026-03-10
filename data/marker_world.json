@@ -6127,6 +6127,15 @@
                     "z": "-18318",
                     "icon": "building",
                     "info": ""
+                },
+                "1085": {
+                    "label": "styx",
+                    "desc": "<div class=\"dial-box\"><h1 class=\"dial-name\">styx</h1><div class=\"dial-bar\"></div><p  class=\"dial-dial\">/dial /dial styx</p><p  class=\"dial-info\">old castle grounds, found by doozie</p><p  class=\"dial-wiki\"><a href=\"\"></a></p><p  class=\"dial-coord\">X : -1314 Y : 64 Z : -1547<br> ID : 1085 Added by : Who?</p></div>",
+                    "x": "-1314",
+                    "y": "64",
+                    "z": "-1547",
+                    "icon": "building",
+                    "info": "old castle grounds, found by doozie"
                 }
             }
         },
